@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Golden Paws Pet Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="sticky">
+        <div class="container nav-container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <h2 style="font-family: var(--font-heading); color: var(--soft-brown);">Golden <span
+                            style="color: var(--accent);">Paws</span></h2>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="products.html" class="btn btn-primary shop-btn">Shop Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main style="margin-top: 100px;">
+        <!-- Page Title & Filters -->
+        <section class="products-header" style="background: var(--cream); padding: 60px 0;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <h1 style="font-size: 3.5rem;">Explore Our Shop</h1>
+                    <p>Qualty supplies for all your beloved companions.</p>
+                </div>
+
+                <div class="filter-bar"
+                    style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; background: var(--white); padding: 20px 30px; border-radius: 50px; box-shadow: var(--shadow);">
+                    <div class="categories" id="categories" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <button class="btn btn-outline category-btn active" data-category="all"
+                            style="padding: 8px 20px; font-size: 0.8rem;">All</button>
+                        <button class="btn btn-outline category-btn" data-category="dogs"
+                            style="padding: 8px 20px; font-size: 0.8rem;">Dogs</button>
+                        <button class="btn btn-outline category-btn" data-category="cats"
+                            style="padding: 8px 20px; font-size: 0.8rem;">Cats</button>
+                        <button class="btn btn-outline category-btn" data-category="birds"
+                            style="padding: 8px 20px; font-size: 0.8rem;">Birds</button>
+                        <button class="btn btn-outline category-btn" data-category="fish"
+                            style="padding: 8px 20px; font-size: 0.8rem;">Fish</button>
+                    </div>
+                    <div class="search-box" style="position: relative;">
+                        <input type="text" id="productSearch" placeholder="Search products..."
+                            style="padding: 10px 40px 10px 20px; border-radius: 30px; border: 1px solid var(--beige); outline: none; width: 250px;">
+                        <i class="fas fa-search"
+                            style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: var(--soft-brown);"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="products-grid-section">
+            <div class="container">
+                <div class="product-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;"
+                    id="productGrid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-category="dogs"
+                        style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);"
+                        data-reveal>
+                        <div class="img-container" style="overflow: hidden; height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&q=80&w=800"
+                                alt="Premium Dog Food"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);">
+                        </div>
+                        <div class="product-info" style="padding: 25px;">
+                            <h3 style="margin-bottom: 5px;">Premium Dog Food (1kg)</h3>
+                            <p style="font-size: 0.9rem; color: #777; margin-bottom: 15px;">Nutritionally balanced
+                                high-protein dry food for adult dogs.</p>
+                            <p
+                                style="color: var(--soft-brown); font-weight: 700; font-size: 1.3rem; margin-bottom: 20px;">
+                                Rs. 1,500</p>
+                            <button class="btn btn-secondary" style="width: 100%;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card" data-category="cats"
+                        style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);"
+                        data-reveal>
+                        <div class="img-container" style="overflow: hidden; height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1591768793355-74d7c80ef8a9?auto=format&fit=crop&q=80&w=800"
+                                alt="Cat Food Pack"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);">
+                        </div>
+                        <div class="product-info" style="padding: 25px;">
+                            <h3 style="margin-bottom: 5px;">Cat Food Pack</h3>
+                            <p style="font-size: 0.9rem; color: #777; margin-bottom: 15px;">Delicious wet food pouches
+                                with real fish and chicken meat.</p>
+                            <p
+                                style="color: var(--soft-brown); font-weight: 700; font-size: 1.3rem; margin-bottom: 20px;">
+                                Rs. 1,200</p>
+                            <button class="btn btn-secondary" style="width: 100%;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card" data-category="birds"
+                        style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);"
+                        data-reveal>
+                        <div class="img-container" style="overflow: hidden; height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&fit=crop&q=80&w=800"
+                                alt="Bird Cage"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);">
+                        </div>
+                        <div class="product-info" style="padding: 25px;">
+                            <h3 style="margin-bottom: 5px;">Bird Cage</h3>
+                            <p style="font-size: 0.9rem; color: #777; margin-bottom: 15px;">Spacious and secure white
+                                steel cage for parakeets and finches.</p>
+                            <p
+                                style="color: var(--soft-brown); font-weight: 700; font-size: 1.3rem; margin-bottom: 20px;">
+                                Rs. 3,500</p>
+                            <button class="btn btn-secondary" style="width: 100%;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card" data-category="dogs"
+                        style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);"
+                        data-reveal>
+                        <div class="img-container" style="overflow: hidden; height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1576708441444-33a736dabb24?auto=format&fit=crop&q=80&w=800"
+                                alt="Dog Toy Set"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);">
+                        </div>
+                        <div class="product-info" style="padding: 25px;">
+                            <h3 style="margin-bottom: 5px;">Dog Toy Set</h3>
+                            <p style="font-size: 0.9rem; color: #777; margin-bottom: 15px;">Durable rope and rubber chew
+                                toys for active dogs.</p>
+                            <p
+                                style="color: var(--soft-brown); font-weight: 700; font-size: 1.3rem; margin-bottom: 20px;">
+                                Rs. 800</p>
+                            <button class="btn btn-secondary" style="width: 100%;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card" data-category="dogs"
+                        style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);"
+                        data-reveal>
+                        <div class="img-container" style="overflow: hidden; height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800"
+                                alt="Pet Shampoo"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);">
+                        </div>
+                        <div class="product-info" style="padding: 25px;">
+                            <h3 style="margin-bottom: 5px;">Pet Shampoo</h3>
+                            <p style="font-size: 0.9rem; color: #777; margin-bottom: 15px;">Organic, soothing shampoo
+                                for sensitive skin and a shiny coat.</p>
+                            <p
+                                style="color: var(--soft-brown); font-weight: 700; font-size: 1.3rem; margin-bottom: 20px;">
+                                Rs. 950</p>
+                            <button class="btn btn-secondary" style="width: 100%;">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="product-card" data-category="fish"
+                        style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);"
+                        data-reveal>
+                        <div class="img-container" style="overflow: hidden; height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&q=80&w=800"
+                                alt="Aquarium Starter Kit"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);">
+                        </div>
+                        <div class="product-info" style="padding: 25px;">
+                            <h3 style="margin-bottom: 5px;">Aquarium Starter Kit</h3>
+                            <p style="font-size: 0.9rem; color: #777; margin-bottom: 15px;">Complete 10-gallon glass
+                                tank with LED light and filter.</p>
+                            <p
+                                style="color: var(--soft-brown); font-weight: 700; font-size: 1.3rem; margin-bottom: 20px;">
+                                Rs. 5,000</p>
+                            <button class="btn btn-secondary" style="width: 100%;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-box">
+                    <h3>Golden Paws</h3>
+                    <p>“Caring for Your Pets Like Family.”</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +94 77 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@goldenpawspetshop.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 25 Flower Road, Colombo 07</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Sunday</p>
+                    <p>7:00 AM – 9:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Golden Paws Pet Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Local Product Filtering Logic
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Change active button
+                document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const category = button.getAttribute('data-category');
+                const products = document.querySelectorAll('.product-card');
+
+                products.forEach(product => {
+                    if (category === 'all' || product.getAttribute('data-category') === category) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search logic
+        const searchInput = document.getElementById('productSearch');
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            const products = document.querySelectorAll('.product-card');
+
+            products.forEach(product => {
+                const title = product.querySelector('h3').textContent.toLowerCase();
+                if (title.includes(term)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
